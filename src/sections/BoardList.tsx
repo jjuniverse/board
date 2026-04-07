@@ -51,7 +51,7 @@ export default function BoardList({ board }: Props) {
   const perPage = 10;
 
   const { data, isLoading, isFetching, isError, error } = useBoard(board, page, perPage, query, target);
-  console.log('err', isError);
+
   const { path } = BOARD[board];
 
   const onPage = (page: number) => {
